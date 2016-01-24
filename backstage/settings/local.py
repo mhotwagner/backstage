@@ -1,6 +1,5 @@
 from .base import *
 
-DEBUG = True
 
 MEDIA_ROOT = BASE_DIR.child("media")
 STATIC_ROOT = BASE_DIR.child("static")
