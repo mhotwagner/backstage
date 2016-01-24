@@ -21,7 +21,8 @@ INSTALLED_APPS += (
     'debug_toolbar',
 )
 
-STATIC_ROOT = 'static'
+STATIC_ROOT = 'static_sources'
+
 
 STATICFILES_DIRS = (
     BASE_DIR.child('static_source'),

@@ -11,7 +11,7 @@ DATABASES = {
     'default': dj_database_url.config()
 }
 
-STATIC_ROOT = 'static'
+STATIC_ROOT = 'static_sources'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
