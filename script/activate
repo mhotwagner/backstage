@@ -1,0 +1,5 @@
+#!/bin/zsh
+# Project scpecific activation and environment variables
+
+export DJANGO_SETTINGS_MODULE=backstage.settings.local
+
