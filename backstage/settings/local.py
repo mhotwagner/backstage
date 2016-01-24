@@ -21,3 +21,5 @@ DATABASES = {
 INSTALLED_APPS += (
     'debug_toolbar',
 )
+
+STATIC_ROOT = 'static'
