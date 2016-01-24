@@ -1,0 +1,9 @@
+.idea
+*.pyc
+
+
+# Mac shit
+.DS_STORE
+.DS_STORE?
+.Trashes
+Thumbs.db
