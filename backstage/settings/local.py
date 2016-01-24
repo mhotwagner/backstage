@@ -22,3 +22,7 @@ INSTALLED_APPS += (
 )
 
 STATIC_ROOT = 'static'
+
+STATICFILES_DIRS = (
+    BASE_DIR.child('static_source'),
+)
