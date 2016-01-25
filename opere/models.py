@@ -13,5 +13,4 @@ class Opera(models.Model):
         return self.name
 
     class Meta:
-        abstract = True
         verbose_name_plural = 'Opere'
