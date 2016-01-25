@@ -1,7 +1,4 @@
 from .base import *
-
-
-MEDIA_ROOT = BASE_DIR.child("media")
 STATIC_ROOT = BASE_DIR.child("static")
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
