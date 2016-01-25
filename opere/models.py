@@ -9,7 +9,7 @@ class Opera(models.Model):
         upload_to='opere/images',
     )
 
-    def str(self):
+    def __str__(self):
         return self.name
 
     class Meta:
