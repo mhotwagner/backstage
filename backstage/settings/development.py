@@ -11,6 +11,10 @@ DATABASES = {
     'default': dj_database_url.config()
 }
 
+# Media handling
+MEDIA_ROOT = BASE_DIR.child("media")
+
+# Static file handling
 STATIC_ROOT = 'static_sources'
 STATIC_URL = '/static/'
 
