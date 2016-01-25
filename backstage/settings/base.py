@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
     'facade',
     'opere',
+    'foti',
 ]
 
 MIDDLEWARE_CLASSES = [
