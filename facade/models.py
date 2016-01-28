@@ -69,3 +69,11 @@ class Profile(SingletonModel):
     instagram = models.URLField(blank=True)
     linkedin = models.URLField(blank=True)
     pinterest = models.URLField(blank=True)
+
+    @property
+    def title(self):
+        return self._title or self.name
+
+    @property
+    def fullname(self):
+        return self._contact_name or self.name
