@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'solo',
 
+    'api',
     'facade',
     'opere',
     'foti',
