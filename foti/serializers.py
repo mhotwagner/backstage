@@ -7,6 +7,7 @@ class FotoSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Foto
         fields = (
+            'id',
             'name',
             'location',
             'date',

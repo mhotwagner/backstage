@@ -7,6 +7,7 @@ class OperaSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Opera
         fields = (
+            'id',
             'name',
             'image',
             'created',

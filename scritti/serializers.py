@@ -7,6 +7,7 @@ class ScrittoSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Scritto
         fields = (
+            'id',
             'name',
             'publication',
             'link',
