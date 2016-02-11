@@ -3,7 +3,6 @@ from django.views.generic import View
 
 from rest_framework import generics, status
 from rest_framework import viewsets as rest_framework_viewsets
-from rest_framework.decorators import api_view
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -41,20 +40,14 @@ class FotiDetailView(generics.RetrieveUpdateAPIView):
     serializer_class = FotoSerializer
 
 
-class ScrittiViewSet(rest_framework_viewsets.ModelViewSet):
-    """
-    Scritti List View
-    """
+class ScrittiListView(generics.ListAPIView):
     queryset = Scritto.objects.all().order_by('date')
     serializer_class = ScrittoSerializer
 
 
-class OpereViewSet(rest_framework_viewsets.ModelViewSet):
-    """
-    Opere List View
-    """
-    queryset = Opera.objects.all().order_by('created')
-    serializer_class = OperaSerializer
+class ScrittiDetailView(generics.RetrieveAPIView):
+    queryset = Scritto.objects.all()
+    serializer_class = ScrittoSerializer
 
 
 class OpereListView(APIView):
@@ -76,6 +69,7 @@ class OpereListView(APIView):
 
 class OpereDetailView(APIView):
     permission_classes = (AllowAny,)
+
     def get_object(self, id):
         try:
             return Opera.objects.get(id=id)
