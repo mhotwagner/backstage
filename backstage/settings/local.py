@@ -1,5 +1,4 @@
 from .base import *
-STATIC_ROOT = BASE_DIR.child("static")
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
@@ -18,12 +17,13 @@ INSTALLED_APPS += (
     'debug_toolbar',
 )
 
-STATIC_ROOT = 'static_source'
+
+STATIC_ROOT = BASE_DIR.child("static")
 
 # import scss
 # scss.config.STATIC_ROOT = STATIC_ROOT
 
 
 STATICFILES_DIRS = (
-    BASE_DIR.child('static'),
+    BASE_DIR.child('static_source'),
 )

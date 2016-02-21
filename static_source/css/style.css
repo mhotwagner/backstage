@@ -4,4 +4,13 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.outer-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .outer-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 /*# sourceMappingURL=style.css.map */
