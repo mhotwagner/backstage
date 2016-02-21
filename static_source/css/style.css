@@ -23,10 +23,15 @@ html {
   top: 50%;
   transform: translateY(-50%); }
 
+html, body {
+  height: 100%; }
+
 .outer-container {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  position: relative;
+  height: 100%; }
   .outer-container::after {
     clear: both;
     content: "";
@@ -68,6 +73,30 @@ header.header {
       margin-right: 0; }
     header.header .menu-container .menu-button {
       font-size: 4em; }
+
+footer.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  footer.footer .tagline {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    text-align: left; }
+    footer.footer .tagline:last-child {
+      margin-right: 0; }
+  footer.footer .social-links {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-right: 0;
+    text-align: right; }
+    footer.footer .social-links:last-child {
+      margin-right: 0; }
+    footer.footer .social-links a {
+      color: #000000; }
 
 @font-face {
   font-family: gotham;

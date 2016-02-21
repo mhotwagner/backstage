@@ -1,0 +1,17 @@
+footer.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  .tagline {
+    @include span-columns(6);
+    text-align: left;
+  }
+  .social-links {
+    @include span-columns(6);
+    @include omega();
+    text-align: right;
+    a {
+      color: #000000;
+    }
+  }
+}

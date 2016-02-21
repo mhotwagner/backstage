@@ -8,3 +8,11 @@ def index(request):
         request=request,
         template_name='pages/index.html',
     )
+
+
+def demo(request):
+    return render(
+        request=request,
+        template_name='pages/demo.html',
+    )
+
