@@ -1,0 +1,11 @@
+@import "margins";
+
+.clear-it {
+  @include clearfix();
+}
+
+.valign {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

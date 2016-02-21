@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: gotham;
+  src: url(../fonts/gotham/gotham-medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: gotham;
+  src: url(../fonts/gotham/gotham-bold.ttf) format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: gotham;
+  src: url(../fonts/gotham/gotham-bolditalic.ttf) format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: gotham;
+  src: url(../fonts/gotham/gotham-mediumitalic.ttf) format('truetype');
+  font-style: italic;
+}
+@font-face {
+  font-family: gotham;
+  src: url(../fonts/gotham/gotham-book.ttf) format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: gotham;
+  src: url(../fonts/gotham/gotham-bookitalic.ttf) format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: gotham;
+  src: url(../fonts/gotham/gotham-light.ttf) format('truetype');
+  font-weight: 200;
+}
+@font-face {
+  font-family: gotham;
+  src: url(../fonts/gotham/gotham-lightitalic.ttf) format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+//@include font-face(gotham, '../fonts/gotham/gotham-medium.ttf');
+
+body, p, h1, h2, h3, h4, h5, h6
+{
+  font-family: gotham, "Helvetica Neue", Helvetica, Roboto, sans-serif;
+  font-weight: normal;
+}

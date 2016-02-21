@@ -17,12 +17,7 @@ INSTALLED_APPS += (
     'debug_toolbar',
 )
 
-
 STATIC_ROOT = BASE_DIR.child("static")
-
-# import scss
-# scss.config.STATIC_ROOT = STATIC_ROOT
-
 
 STATICFILES_DIRS = (
     BASE_DIR.child('static_source'),
