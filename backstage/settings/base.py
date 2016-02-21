@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     'opere',
     'foti',
     'scritti',
+
+    'frontend',
 ]
 
 MIDDLEWARE_CLASSES = [

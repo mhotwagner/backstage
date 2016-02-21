@@ -18,7 +18,10 @@ INSTALLED_APPS += (
     'debug_toolbar',
 )
 
-STATIC_ROOT = 'static_sources'
+STATIC_ROOT = 'static_source'
+
+import scss
+scss.config.STATIC_ROOT = STATIC_ROOT
 
 
 STATICFILES_DIRS = (
