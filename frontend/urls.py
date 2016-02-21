@@ -7,8 +7,7 @@ from .views import (
 )
 
 
-
 urlpatterns = [
     url(r'^$', index, name='home'),
-
+    url(r'^index.html$', index, name='other_home'),
 ]

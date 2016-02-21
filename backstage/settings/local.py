@@ -20,10 +20,10 @@ INSTALLED_APPS += (
 
 STATIC_ROOT = 'static_source'
 
-import scss
-scss.config.STATIC_ROOT = STATIC_ROOT
+# import scss
+# scss.config.STATIC_ROOT = STATIC_ROOT
 
 
 STATICFILES_DIRS = (
-    BASE_DIR.child('static_source'),
+    BASE_DIR.child('static'),
 )
