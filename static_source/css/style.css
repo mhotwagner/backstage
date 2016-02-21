@@ -1,6 +1,7 @@
-.test .test-inner {
-  font-style: italic; }
-.test .whatever {
-  color: red; }
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,3 @@
-.test {
-  .test-inner {
-    font-style: italic;
-  }
-  .whatever {
-    color: red;
-  }
-}
+@import "bourbon/bourbon";
+@import "neat/neat";
+
