@@ -99,7 +99,6 @@ header.header {
   width: 100%;
   height: 100px; }
   header.header .logo {
-    margin-left: 12.79471%;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -129,20 +128,18 @@ header.header {
       color: #F75C02; }
   header.header .menu {
     margin-top: 9px;
-    margin-left: 12.79471%;
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 74.41059%; }
+    width: 18.96686%;
+    margin-right: 0;
+    text-align: right; }
     header.header .menu:last-child {
       margin-right: 0; }
-    header.header .menu ul {
-      text-align: center; }
-      header.header .menu ul li {
-        display: inline-block;
-        width: 18%;
-        font-size: 1.125em;
-        font-weight: 300; }
+    header.header .menu ul li {
+      font-size: 1.125em;
+      line-height: 1.125em;
+      font-weight: 300; }
   header.header .menu-container {
     float: left;
     display: block;
@@ -157,29 +154,35 @@ header.header {
 
 footer.footer {
   position: absolute;
-  bottom: 0;
+  bottom: 8px;
   width: 100%;
   height: 36px; }
   footer.footer .tagline {
-    margin-left: 12.79471%;
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 40.29137%;
-    text-align: left; }
+    width: 48.82117%; }
     footer.footer .tagline:last-child {
       margin-right: 0; }
+    footer.footer .tagline h4 {
+      text-align: left;
+      font-size: 1.125em;
+      font-weight: 200; }
   footer.footer .social-links {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 27.49666%;
+    width: 48.82117%;
     margin-right: 0;
     text-align: right; }
     footer.footer .social-links:last-child {
       margin-right: 0; }
     footer.footer .social-links a {
-      color: #000000; }
+      margin-right: 6px;
+      text-decoration: none; }
+      footer.footer .social-links a img {
+        width: 28px;
+        height: 28px; }
 
 @font-face {
   font-family: gotham;
