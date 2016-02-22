@@ -13,6 +13,7 @@ DATABASES = {
 
 # Media handling
 MEDIA_ROOT = BASE_DIR.child("media")
+MEDIA_URL = '/media/'
 
 # Static file handling
 STATIC_ROOT = 'static'
