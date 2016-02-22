@@ -16,9 +16,9 @@ DATABASES = {
 MEDIA_ROOT = BASE_DIR.child("media")
 
 # Static file handling
-STATIC_ROOT = 'static_sources'
+STATIC_ROOT = 'static'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'static_source'),
 )
