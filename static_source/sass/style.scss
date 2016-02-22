@@ -19,13 +19,18 @@
     position: relative;
     display: inline-block;
     width: 30%;
+    overflow: hidden;
     margin-right: 18px;
     cursor: pointer;
     @include omega(3n);
     img {
-      width: 100%;
+      width: auto;
+      height: 255px;
       transition: all 200ms ease-out;
       cursor: pointer;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     .hover-up {

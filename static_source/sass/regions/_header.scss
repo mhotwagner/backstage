@@ -29,7 +29,7 @@ header.header {
   }
   .menu {
     margin-top: 9px;
-    @include span-columns(2.5);
+    @include span-columns(2.25);
     @include omega();
     text-align: right;
     ul {
@@ -37,6 +37,67 @@ header.header {
         font-size: 1.125em;
         line-height: 1.125em;
         font-weight: 300;
+        a {
+          position: relative;
+          text-decoration: none;
+          transition: color 150ms ease-out;
+          &:before {
+            content: "-";
+            position: absolute;
+            left: -30px;
+            opacity: 0;
+            transition: all 150ms ease-out;
+          }
+          &:hover {
+            color: #F75C02;
+            &:before {
+              left: -10px;
+              opacity: 1;
+              color: #F75C02;
+            }
+          }
+          //&[data-index="1"] {
+          //  color: #rr0000;
+          //  &:hover {
+          //    color: #009B77;
+          //    &:before {
+          //      color: #009B77;
+          //    }
+          //  }
+          //}
+          //&[data-index="2"] {
+          //  &:hover {
+          //    color: #820263;
+          //    &:before {
+          //      color: #820263;
+          //    }
+          //  }
+          //}
+          //&[data-index="3"] {
+          //  &:hover {
+          //    color: #F75C02;
+          //    &:before {
+          //      color: #F75C02;
+          //    }
+          //  }
+          //}
+          //&[data-index="4"] {
+          //  &:hover {
+          //    color: #820263;
+          //    &:before {
+          //      color: #820263;
+          //    }
+          //  }
+          //}
+          //&[data-index="5"] {
+          //  &:hover {
+          //    color: #009B77;
+          //    &:before {
+          //      color: #009B77;
+          //    }
+          //  }
+          //}
+        }
       }
     }
   }

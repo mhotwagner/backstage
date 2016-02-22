@@ -22,3 +22,6 @@ STATIC_ROOT = BASE_DIR.child("static")
 STATICFILES_DIRS = (
     BASE_DIR.child('static_source'),
 )
+
+MEDIA_ROOT = BASE_DIR.child("media")
+MEDIA_URL = '/media/'

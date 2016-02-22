@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% load static from staticfiles %}
+
+{% block title %}
+Demo | Meghan R Duffy | Do Real Shit
+{% endblock title %}
+
+{% block body_content %}
+
+    <div class="inner-content valign">
+        <!--<h2 class="content=title">Photography</h2>-->
+        <ul class="row">
+            {% for foto in photos_a %}
+                <li class="row-item content-item">
+                <img class="hover-up" src="{{ foto.image.url }}"/>
+                <em class="clear-it"></em>
+           </li>
+            {% endfor %}
+           <!--<li class="row-item content-item" id="1">-->
+                <!--<img class="hover-up" src="http://placehold.it/500/CCCCCC/FFFFFF/"/>-->
+                <!--<img class="hover-down" src="http://placehold.it/500/291720/FFFFFF/"/>-->
+                <!--<em class="clear-it"></em>-->
+           <!--</li>-->
+            <!--<li class="row-item content-item" data-index="2">-->
+                <!--<img class="hover-up" src="http://placehold.it/500/CCCCCC/FFFFFF/"/>-->
+                <!--<img class="hover-down" src="http://placehold.it/500/009B77/FFFFFF/"/>-->
+                <!--<em class="clear-it"></em>-->
+           <!--</li>-->
+            <!--<li class="row-item content-item" data-index="3">-->
+                <!--<img class="hover-up" src="http://placehold.it/500/CCCCCC/FFFFFF/"/>-->
+                <!--<img class="hover-down" src="http://placehold.it/500/820263/FFFFFF/"/>-->
+                <!--<em class="clear-it"></em>-->
+           <!--</li>-->
+        </ul>
+        <ul class="row">
+            {% for foto in photos_b %}
+                <li class="row-item content-item">
+                    <img class="hover-up" src="{{ foto.image.url }}"/>
+                    <em class="clear-it"></em>
+               </li>
+            {% endfor %}
+           <!--<li class="row-item content-item" data-index="1">-->
+                <!--<img class="hover-up" src="http://placehold.it/500/CCCCCC/FFFFFF/"/>-->
+                <!--<img class="hover-down" src="http://placehold.it/500/F75C02/FFFFFF/"/>-->
+                <!--<em class="clear-it"></em>-->
+           <!--</li>-->
+            <!--<li class="row-item content-item" data-index="2">-->
+                <!--<img class="hover-up" src="http://placehold.it/500/CCCCCC/FFFFFF/"/>-->
+                <!--<img class="hover-down" src="http://placehold.it/500/D90368/FFFFFF/"/>-->
+                <!--<em class="clear-it"></em>-->
+           <!--</li>-->
+            <!--<li class="row-item content-item" data-index="3">-->
+                <!--<img class="hover-up" src="http://placehold.it/500/CCCCCC/FFFFFF/"/>-->
+                <!--<img class="hover-down" src="http://placehold.it/500/291720/FFFFFF/"/>-->
+                <!--<em class="clear-it"></em>-->
+           <!--</li>-->
+        </ul>
+        <em class="clear-it"></em>
+    </div>
+
+{% endblock body_content %}
