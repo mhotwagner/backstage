@@ -10,12 +10,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="/static/css/normalize.css">
+        <link rel="stylesheet" href="/static/css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         {% block extra_style %}
         {% endblock extra_style %}
 
-        <script src="static/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="/static/js/vendor/modernizr-2.8.3.min.js"></script>
         {% block extra_js %}
         {% endblock extra_js %}
 
@@ -26,17 +27,17 @@
         <div class="outer-container">
             {% include 'utils/ie-warning.html' %}
 
-            <header class="header">
+            <header class="header z-top">
                 {% include 'regions/header.html' %}
             </header>
 
-            <div class="content">
+            <div class="content z-bottom">
                 {% block body_content %}
                     <h1>Body Content</h1>
                 {% endblock body_content %}
             </div>
 
-            <footer class="footer">
+            <footer class="footer z-top">
                 {% include 'regions/footer.html' %}
             </footer>
         </div>

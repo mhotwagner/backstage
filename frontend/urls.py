@@ -4,10 +4,11 @@ from rest_framework import routers
 
 from .views import (
     index,
-)
+    demo)
 
 
 urlpatterns = [
     url(r'^$', index, name='home'),
-    url(r'^index.html$', index, name='other_home'),
+    url(r'^demo/$', demo, name='demo'),
+
 ]

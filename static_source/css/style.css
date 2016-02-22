@@ -13,6 +13,53 @@ html {
 .no-bottom {
   margin-botom: 0; }
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 .clear-it::after {
   clear: both;
   content: "";
@@ -37,11 +84,22 @@ html, body {
     content: "";
     display: table; }
 
+.z-top {
+  z-index: 200; }
+
+.z-middle {
+  z-index: 100; }
+
+.z-bottom {
+  z-index: 0; }
+
 header.header {
-  position: relative;
+  position: absolute;
+  top: 18px;
   width: 100%;
   height: 100px; }
   header.header .logo {
+    margin-left: 12.79471%;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -55,18 +113,41 @@ header.header {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 61.61588%;
+    width: 48.82117%;
+    margin-right: 0;
     height: 100%; }
     header.header .title:last-child {
       margin-right: 0; }
-    header.header .title h1 {
-      font-size: 4em;
+    header.header .title .name {
+      text-align: center;
+      font-size: 3em;
       font-weight: 200; }
+    header.header .title .dream {
+      text-align: center;
+      font-size: 2em;
+      font-weight: 200;
+      color: #F75C02; }
+  header.header .menu {
+    margin-top: 9px;
+    margin-left: 12.79471%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    header.header .menu:last-child {
+      margin-right: 0; }
+    header.header .menu ul {
+      text-align: center; }
+      header.header .menu ul li {
+        display: inline-block;
+        width: 18%;
+        font-size: 1.125em;
+        font-weight: 300; }
   header.header .menu-container {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 10.43705%;
+    width: 18.96686%;
     margin-right: 0;
     height: 100%; }
     header.header .menu-container:last-child {
@@ -77,12 +158,14 @@ header.header {
 footer.footer {
   position: absolute;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  height: 36px; }
   footer.footer .tagline {
+    margin-left: 12.79471%;
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
+    width: 40.29137%;
     text-align: left; }
     footer.footer .tagline:last-child {
       margin-right: 0; }
@@ -90,7 +173,7 @@ footer.footer {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
+    width: 27.49666%;
     margin-right: 0;
     text-align: right; }
     footer.footer .social-links:last-child {
@@ -135,5 +218,40 @@ footer.footer {
 body, p, h1, h2, h3, h4, h5, h6 {
   font-family: gotham, "Helvetica Neue", Helvetica, Roboto, sans-serif;
   font-weight: normal; }
+
+.content {
+  height: 100%; }
+
+.row {
+  margin-left: 12.79471%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  margin-top: 18px; }
+  .row:last-child {
+    margin-right: 0; }
+  .row .row-item {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    margin-right: 18px;
+    cursor: pointer; }
+    .row .row-item:nth-child(3n) {
+      margin-right: 0; }
+    .row .row-item:nth-child(3n+1) {
+      clear: left; }
+    .row .row-item img {
+      width: 100%;
+      transition: all 200ms ease-out;
+      cursor: pointer; }
+    .row .row-item .hover-down {
+      opacity: 0;
+      position: absolute;
+      top: 0; }
+    .row .row-item:hover .hover-up {
+      opacity: .00001; }
+    .row .row-item:hover .hover-down {
+      opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */

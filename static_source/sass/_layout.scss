@@ -5,5 +5,16 @@ html, body {
 .outer-container {
   @include outer-container;
   position: relative;
+  //height: auto !important;
   height: 100%;
+}
+
+.z-top {
+  z-index: 200;
+}
+.z-middle {
+  z-index: 100;
+}
+.z-bottom {
+  z-index: 0;
 }
