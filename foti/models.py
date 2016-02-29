@@ -14,5 +14,6 @@ class Foto(opere_models.Opera):
         verbose_name_plural = 'Foti'
 
     def save(self, *args, **kwargs):
+        print('overriding save')
         self.is_foto = True
         super(Foto, self).save(*args, **kwargs)
