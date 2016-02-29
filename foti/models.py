@@ -12,3 +12,7 @@ class Foto(opere_models.Opera):
 
     class Meta:
         verbose_name_plural = 'Foti'
+
+    def save(self, *args, **kwargs):
+        self.is_foto = True
+        super(Foto, self).save(*args, **kwargs)

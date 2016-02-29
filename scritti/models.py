@@ -13,3 +13,7 @@ class Scritto(opere_models.Opera):
 
     class Meta:
         verbose_name_plural = 'Scritti'
+
+    def save(self, *args, **kwargs):
+        self.is_scritto = True
+        super(Scritto, self).save(*args, **kwargs)

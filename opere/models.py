@@ -20,6 +20,9 @@ class Opera(models.Model):
         processors=[Adjust(color=0), ],
     )
 
+    is_foto = models.BooleanField(default=False)
+    is_scritto = models.BooleanField(default=False)
+
     def __str__(self):
         return self.name
 

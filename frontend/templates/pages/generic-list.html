@@ -12,21 +12,25 @@ Demo | Meghan R Duffy | Do Real Shit
         <!--<h2 class="content=title">Photography</h2>-->
         <ul class="row">
             {% for item in top_row %}
-                <a
-                        class="fancybox-button"
-                        rel="fancybox-button"
-                        href="{{ item.image_color.url }}"
-                        title="{{ item.name }}"
-                >
-                    <li class="row-item content-item">
-                        <div class="img sized-image centered-image hover-up" style="background-image: url({{ item.image_grayscale.url }});"></div>
-                        <div class="img sized-image centered-image hover-down" style="background-image: url({{ item.image_color.url }});"></div>
-                        <div class="info">
-                            <h6 class="valign">{{ item.name }}</h6>
-                        </div>
-                        <em class="clear-it"></em>
-                    </li>
-                </a>
+                {% if item.is_foto %}
+                    <a
+                            class="fancybox-button"
+                            rel="fancybox-button"
+                            href="{{ item.image_color.url }}"
+                            title="{{ item.name }}"
+                    >
+                        <li class="row-item content-item">
+                            <div class="img sized-image centered-image hover-up" style="background-image: url({{ item.image_grayscale.url }});"></div>
+                            <div class="img sized-image centered-image hover-down" style="background-image: url({{ item.image_color.url }});"></div>
+                            <div class="info">
+                                <h6 class="valign">{{ item.name }}</h6>
+                            </div>
+                            <em class="clear-it"></em>
+                        </li>
+                    </a>
+                {% elif item.is_scritto %}
+                    <h1>scritto</h1>
+                {% endif %}
             {% endfor %}
         </ul>
         <ul class="row">
