@@ -8,6 +8,8 @@ IMAGE_DIR = 'opere/images'
 
 
 class Opera(models.Model):
+    opera_index = models.IntegerField(default=0, blank=False, null=False)
+
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateField(auto_now=True)
     name = models.CharField(max_length=255, blank=False)
@@ -27,3 +29,4 @@ class Opera(models.Model):
 
     class Meta:
         verbose_name_plural = 'Opere'
+        ordering = ('opera_index',)

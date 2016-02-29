@@ -3,6 +3,10 @@ from django.db import models
 from solo.models import SingletonModel
 from phonenumber_field import modelfields as phonenumber_models
 
+from foti.models import Foto
+from opere.models import Opera
+from scritti.models import Scritto
+
 
 class Profile(SingletonModel):
 
@@ -69,6 +73,10 @@ class Profile(SingletonModel):
     instagram = models.URLField(blank=True)
     linkedin = models.URLField(blank=True)
     pinterest = models.URLField(blank=True)
+
+    homepage_features = models.ManyToManyField(Opera, related_name='facade_homepage_features', help_text='Max of 6!')
+    writing_features = models.ManyToManyField(Scritto, related_name='facade_writing_features', help_text='Max of 6!')
+    photo_features = models.ManyToManyField(Foto, related_name='facade_photo_features', help_text='Max of 6!')
 
     @property
     def title(self):
