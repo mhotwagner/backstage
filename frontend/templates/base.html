@@ -12,13 +12,24 @@
 
         <link rel="stylesheet" href="/static/css/normalize.css">
         <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="/static/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         {% block extra_style %}
         {% endblock extra_style %}
 
         <script src="/static/js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="/static/js/vendor/jquery-1.12.0.min.js"></script>
-        <script src="/static/js/backstage.js"></script>
+
+        <script type="text/javascript" src="/static/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+        <!-- Optionally add helpers - button, thumbnail and/or media -->
+        <link rel="stylesheet" href="/static/js/vendor/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="/static/js/vendor/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+        <script type="text/javascript" src="/static/js/vendor/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+        <link rel="stylesheet" href="/static/js/vendor/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+        <script type="text/javascript" src="/static/js/vendor/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+        <script type="text/javascript" src="/static/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
         {% block extra_js %}
         {% endblock extra_js %}
 
@@ -55,5 +66,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>-->
+        <script src="/static/js/backstage.js"></script>
     </body>
 </html>

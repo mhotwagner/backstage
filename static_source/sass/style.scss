@@ -15,7 +15,10 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
 }
 
-a, a:hover, a:visited { color: #000000; }
+a, a:hover, a:visited {
+  color: #000000;
+  text-decoration: initial;
+}
 
 
 .content {
