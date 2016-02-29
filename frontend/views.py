@@ -1,7 +1,10 @@
 from django.shortcuts import render
 
 # Create your views here.
+from django.views.generic import View
+
 from foti.models import Foto
+from opere.models import Opera
 
 
 def index(request):
@@ -27,3 +30,17 @@ def photo_demo(request):
         template_name='pages/photo-demo.html',
         context={'photos_a': photos[:3], 'photos_b': photos[3:6], }
     )
+
+
+class OperaListView(View):
+    def get(self, request):
+        opere = Opera.objects.all()[:6]
+
+        return render(
+            request=request,
+            template_name='pages/generic-list.html',
+            context = {
+                'top_row': opere[:3],
+                'bottom_row': opere[3:]
+            },
+        )

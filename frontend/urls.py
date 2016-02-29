@@ -5,14 +5,17 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns, static
 from rest_framework import routers
 
 from .views import (
-    index,
-    demo, photo_demo)
+    demo, photo_demo,
+    OperaListView
+)
 
 
 urlpatterns = [
-    url(r'^$', index, name='home'),
+    url(r'^$', OperaListView.as_view(), name='home'),
+
     url(r'^demo/$', demo, name='demo'),
     url(r'^photo-demo/$', photo_demo, name='photo_demo'),
+
 ]
 
 urlpatterns += staticfiles_urlpatterns()

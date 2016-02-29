@@ -19,6 +19,7 @@ django-jet==0.1.3
 
 # Image handling
 Pillow==3.1.0
+wand
 
 # Serving Static Assets
 libsass
