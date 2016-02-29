@@ -40,7 +40,7 @@ class OperaListView(View):
         return render(
             request=request,
             template_name='pages/generic-list.html',
-            context = {
+            context={
                 'top_row': opere[:3],
                 'bottom_row': opere[3:],
             },
