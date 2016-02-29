@@ -4,7 +4,6 @@ from imagekit import models as imagekit_models
 from imagekit.processors import Adjust
 
 
-
 IMAGE_DIR = 'opere/images'
 
 
