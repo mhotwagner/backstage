@@ -23,6 +23,7 @@ django-imagekit
 
 # Static Assets
 django-assets
+django-storages
 libsass
 whitenoise==2.0.6
 
