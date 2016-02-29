@@ -75,8 +75,7 @@ class Profile(SingletonModel):
     pinterest = models.URLField(blank=True)
 
     # Someday we'll change the first one to accept Opera
-    homepage_features = models.ManyToManyField(Opera, related_name='facade_old_homepage_features', help_text='Max of 6!', blank=True)
-    new_homepage_features = models.ManyToManyField(Scritto, related_name='facade_homepage_features', help_text='Max of 6!', blank=True)
+    homepage_features = models.ManyToManyField(Scritto, related_name='facade_homepage_features', help_text='Max of 6!', blank=True)
     writing_features = models.ManyToManyField(Scritto, related_name='facade_writing_features', help_text='Max of 6!', blank=True)
     photo_features = models.ManyToManyField(Foto, related_name='facade_photo_features', help_text='Max of 6!', blank=True)
 
