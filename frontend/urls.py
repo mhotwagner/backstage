@@ -1,13 +1,13 @@
 from django.conf import settings
-from django.conf.urls import url, include
+from django.conf.urls import url
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns, static
 
-from rest_framework import routers
 
 from .views import (
-    demo, photo_demo,
     OperaListView,
-    FotoListView, ScrittoListView)
+    FotoListView,
+    ScrittoListView
+)
 
 
 urlpatterns = [
