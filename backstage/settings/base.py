@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'django_extensions',
+    'storages',
     'rest_framework',
     'django_assets',
     'imagekit',
