@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% load static from staticfiles %}
+
+{% block page_title %}
+Demo | Meghan R Duffy | Do Real Shit
+{% endblock page_title %}
+
+{% block body_content %}
+
+    <div class="inner-content valign">
+        <ul class="row">
+            {% for item in top_row %}
+                <a
+                        class=""
+                        href="{{ item.link}}"
+                        target="_blank"
+                >
+                    <li class="row-item content-item">
+                        <div class="img sized-image centered-image hover-up" style="background-image: url({{ item.image_color.url }});"></div>
+                        <div class="img sized-image centered-image hover-down" style="background-image: url({{ item.image_grayscale.url }});"></div>
+                        <div class="info">
+                            <h6 class="valign">{{ item.name }}</h6>
+                        </div>
+                        <em class="clear-it"></em>
+                    </li>
+                </a>
+            {% endfor %}
+        </ul>
+        <ul class="row">
+            {% for item in bottom_row %}
+                <a
+                        class=""
+                        href="{{ item.link}}"
+                        target="_blank"
+                >
+                    <li class="row-item content-item">
+                        <div class="img sized-image centered-image hover-up" style="background-image: url({{ item.image_color.url }});"></div>
+                        <div class="img sized-image centered-image hover-down" style="background-image: url({{ item.image_grayscale.url }});"></div>
+                        <div class="info">
+                            <h6 class="valign">{{ item.name }}</h6>
+                        </div>
+                        <em class="clear-it"></em>
+                    </li>
+                </a>
+            {% endfor %}
+        </ul>
+        <em class="clear-it"></em>
+    </div>
+
+{% endblock body_content %}
