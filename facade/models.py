@@ -74,9 +74,9 @@ class Profile(SingletonModel):
     linkedin = models.URLField(blank=True)
     pinterest = models.URLField(blank=True)
 
-    homepage_features = models.ManyToManyField(Opera, related_name='facade_homepage_features', help_text='Max of 6!')
-    writing_features = models.ManyToManyField(Scritto, related_name='facade_writing_features', help_text='Max of 6!')
-    photo_features = models.ManyToManyField(Foto, related_name='facade_photo_features', help_text='Max of 6!')
+    homepage_features = models.ManyToManyField(Opera, related_name='facade_homepage_features', help_text='Max of 6!', blank=True)
+    writing_features = models.ManyToManyField(Scritto, related_name='facade_writing_features', help_text='Max of 6!', blank=True)
+    photo_features = models.ManyToManyField(Foto, related_name='facade_photo_features', help_text='Max of 6!', blank=True)
 
     @property
     def title(self):

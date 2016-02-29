@@ -3,6 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 from django.views.generic import View
 
+from facade.models import Profile
 from foti.models import Foto
 from opere.models import Opera
 from scritti.models import Scritto
@@ -10,7 +11,8 @@ from scritti.models import Scritto
 
 class OperaListView(View):
     def get(self, request):
-        opere = Opera.objects.all()[:6]
+
+        opere = Profile.objects.first().homepage_features.all()
 
         return render(
             request=request,
@@ -24,7 +26,8 @@ class OperaListView(View):
 
 class FotoListView(View):
     def get(self, request):
-        foti = Foto.objects.all()[:6]
+
+        foti = Profile.objects.first().photo_features.all()
 
         return render(
             request=request,
@@ -38,7 +41,8 @@ class FotoListView(View):
 
 class ScrittoListView(View):
     def get(self, request):
-        scritti = Scritto.objects.all()[:6]
+
+        scritti = Profile.objects.first().writing_features.all()
 
         return render(
             request=request,
