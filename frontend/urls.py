@@ -14,10 +14,6 @@ urlpatterns = [
     url(r'^$', OperaListView.as_view(), name='home'),
     url(r'^photos/$', FotoListView.as_view(), name='photos'),
     url(r'^writing/$', ScrittoListView.as_view(), name='writing'),
-
-    # url(r'^demo/$', demo, name='demo'),
-    # url(r'^photo-demo/$', photo_demo, name='photo_demo'),
-
 ]
 
 urlpatterns += staticfiles_urlpatterns()
