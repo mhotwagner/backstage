@@ -6,7 +6,15 @@
 }
 
 .valign {
+  transform: translateY(-50%);
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+}
+
+.valign-large {
+  @include media(min-width 1280px) {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
