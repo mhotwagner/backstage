@@ -18,3 +18,11 @@
     transform: translateY(-50%);
   }
 }
+
+.valign-middle-up {
+  @include media(min-width 640px) {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

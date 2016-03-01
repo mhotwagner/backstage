@@ -76,6 +76,12 @@ table {
     top: 50%;
     transform: translateY(-50%); } }
 
+@media screen and (min-width: 640px) {
+  .valign-middle-up {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); } }
+
 html, body {
   height: 100%; }
 
