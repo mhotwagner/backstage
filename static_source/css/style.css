@@ -76,13 +76,13 @@ table {
     top: 50%;
     transform: translateY(-50%); } }
 
-@media screen and (min-width: 860px) and (max-width: 1280px) {
+@media screen and (min-width: 860px) and (max-width: 1279px) {
   .valign-large {
     position: relative;
     top: 50%;
     transform: translateY(-50%); } }
 
-@media screen and (min-width: 640px) and (max-width: 860px) {
+@media screen and (min-width: 640px) and (max-width: 859px) {
   .valign-middle {
     position: relative;
     top: 50%;
@@ -202,7 +202,7 @@ footer.footer {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%; }
+    width: 65.88078%; }
     footer.footer .tagline:last-child {
       margin-right: 0; }
     footer.footer .tagline h4 {
@@ -215,7 +215,7 @@ footer.footer {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
+    width: 31.76157%;
     margin-right: 0;
     text-align: right; }
     footer.footer .social-links:last-child {
@@ -331,7 +331,7 @@ a, a:hover, a:visited {
     .row .row-item:hover .hover-down {
       opacity: 1; }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   body, html {
     height: auto; }
 
@@ -342,12 +342,12 @@ a, a:hover, a:visited {
 
   header.header {
     position: relative;
-    top: 0;
+    top: 0.5em;
     height: 50px; }
     header.header .logo img {
       height: 50px; }
     header.header .title .name {
-      font-size: 1.5em; }
+      font-size: 1.75em; }
     header.header .title .dream {
       font-size: 1.25em; }
     header.header .menu {
@@ -384,18 +384,30 @@ a, a:hover, a:visited {
         left: 0px; }
 
   footer.footer {
-    position: fixed; } }
-@media screen and (max-width: 860px) {
+    position: relative; }
+    footer.footer .tagline {
+      margin-left: 4.2649%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%; }
+      footer.footer .tagline:last-child {
+        margin-right: 0; }
+    footer.footer .social-links {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-right: 0; }
+      footer.footer .social-links:last-child {
+        margin-right: 0; } }
+@media screen and (max-width: 859px) {
   .row .row-item {
     width: 28%; }
 
   footer.footer {
-    height: auto; }
-    footer.footer .tagline {
-      padding-left: 2%; }
-    footer.footer .social-links {
-      padding-right: 2%; } }
-@media screen and (max-width: 640px) {
+    height: auto; } }
+@media screen and (max-width: 639px) {
   header.header {
     position: fixed;
     height: 62px;
@@ -422,6 +434,7 @@ a, a:hover, a:visited {
       header.header .title:last-child {
         margin-right: 0; }
       header.header .title .name {
+        font-size: 1.5em;
         text-align: left; }
       header.header .title .dream {
         display: none; }
@@ -438,16 +451,42 @@ a, a:hover, a:visited {
     bottom: 0;
     padding: 8px 0;
     background: #fff;
-    box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.5); } }
-@media screen and (max-width: 480px) {
+    box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.5); }
+    footer.footer .tagline {
+      margin-left: 6.71394%;
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 39.57458%; }
+      footer.footer .tagline:last-child {
+        margin-right: 0; }
+    footer.footer .social-links {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 39.57458%;
+      margin-right: 0; }
+      footer.footer .social-links:last-child {
+        margin-right: 0; } }
+@media screen and (max-width: 479px) {
   header.header .logo {
     width: auto; }
 
   footer.footer .tagline {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
     font-size: 1em; }
-    footer.footer .tagline h4 .break {
-      display: initial; }
+    footer.footer .tagline h4 {
+      text-align: center; }
+      footer.footer .tagline h4 .break {
+        display: initial; }
   footer.footer .social-links {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
     margin-top: 10px; }
     footer.footer .social-links a img {
       width: 24px;

@@ -81,7 +81,7 @@ a, a:hover, a:visited {
   }
 }
 
-@include media(max-width 1280px) {
+@include media(max-width 1279px) {
   body, html {
     height: auto;
   }
@@ -92,7 +92,7 @@ a, a:hover, a:visited {
   }
   header.header {
     position: relative;
-    top: 0;
+    top: 0.5em;
     height: 50px;
     .logo {
       img {
@@ -101,7 +101,7 @@ a, a:hover, a:visited {
     }
     .title {
       .name {
-        font-size: 1.5em;
+        font-size: 1.75em;
       }
       .dream {
         font-size: 1.25em;
@@ -149,11 +149,19 @@ a, a:hover, a:visited {
     }
   }
   footer.footer {
-    position: fixed;
+    position: relative;
+    .tagline {
+      @include shift(.5);
+      @include span-columns(7);
+    }
+    .social-links {
+      @include span-columns(4);
+      @include omega();
+    }
   }
 }
 
-@include media(max-width 860px) {
+@include media(max-width 859px) {
   .row {
     .row-item {
       width: 28%;
@@ -161,15 +169,9 @@ a, a:hover, a:visited {
   }
   footer.footer {
     height: auto;
-    .tagline {
-      padding-left: 2%;
-    }
-    .social-links {
-      padding-right: 2%;
-    }
   }
 }
-@include media(max-width 640px, 4) {
+@include media(max-width 639px, 4) {
   header.header {
     position: fixed;
     height: 62px;
@@ -188,6 +190,7 @@ a, a:hover, a:visited {
     .title {
       @include span-columns(2);
       .name {
+        font-size: 1.5em;
         text-align: left;
       }
       .dream {
@@ -210,10 +213,18 @@ a, a:hover, a:visited {
     padding: 8px 0;
     background: #fff;
     box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.5);
+    .tagline {
+      @include shift(.25 of 4);
+      @include span-columns(1.75 of 4);
+    }
+    .social-links {
+      @include span-columns(1.75 of 4);
+      @include omega();
+    }
   }
 }
 
-@include media(max-width 480px) {
+@include media(max-width 479px, 4) {
   header.header {
     .logo {
       width: auto;
@@ -221,14 +232,23 @@ a, a:hover, a:visited {
   }
   footer.footer {
     .tagline {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      float: none;
       font-size: 1em;
       h4 {
+        text-align: center;
         .break {
           display: initial;
         }
       }
     }
     .social-links {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
       margin-top: 10px;
       a {
         img {
