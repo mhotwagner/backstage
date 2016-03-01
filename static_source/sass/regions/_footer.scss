@@ -9,6 +9,9 @@ footer.footer {
       text-align: left;
       font-size: 1.125em;
       font-weight: 200;
+      .break {
+        display: none;
+      }
     }
   }
   .social-links {

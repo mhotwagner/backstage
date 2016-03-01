@@ -109,14 +109,19 @@ a, a:hover, a:visited {
     }
     .menu {
       position: fixed;
-      @include shift(9 of 12);
+      left: 50%;
+      margin: 0 !important;
+      padding-top: 0.5em;
+      width: 50%;
       height: 100%;
       margin-top: 9px;
       text-align: right;
       .menu-button {
-        position: relative;
-        z-index: 100;
         display: block;
+        position: relative;
+        margin-top: 4px;
+        z-index: 100;
+        width: 85%;
         font-size: 2em;
       }
       ul {
@@ -124,7 +129,7 @@ a, a:hover, a:visited {
         top: 0;
         left: 200%;
         height: 100%;
-        width: 200%;
+        width: 185%;
         padding-right: 100%;
         padding-top: 72px;
 
@@ -136,7 +141,7 @@ a, a:hover, a:visited {
           line-height: 2em;
         }
       }
-      &:hover {
+      &.active {
         ul {
           left: 0px;
         }
@@ -154,13 +159,41 @@ a, a:hover, a:visited {
       width: 28%;
     }
   }
+  footer.footer {
+    height: auto;
+    .tagline {
+      padding-left: 2%;
+    }
+    .social-links {
+      padding-right: 2%;
+    }
+  }
 }
-@include media(max-width 640px) {
+@include media(max-width 640px, 4) {
   header.header {
     position: fixed;
     height: 62px;
     background: #fff;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    .logo {
+      @include shift(.25);
+      @include span-columns(1.25);
+      margin-right: 3%;
+      padding-top: 4px;
+      img {
+        height: 50px;
+        width: auto;
+      }
+    }
+    .title {
+      @include span-columns(2);
+      .name {
+        text-align: left;
+      }
+      .dream {
+        display: none;
+      }
+    }
   }
   .content {
     margin-top: 2em;
@@ -174,8 +207,35 @@ a, a:hover, a:visited {
   }
   footer.footer {
     bottom: 0;
-    height: 48px;
+    padding: 8px 0;
     background: #fff;
     box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@include media(max-width 480px) {
+  header.header {
+    .logo {
+      width: auto;
+    }
+  }
+  footer.footer {
+    .tagline {
+      font-size: 1em;
+      h4 {
+        .break {
+          display: initial;
+        }
+      }
+    }
+    .social-links {
+      margin-top: 10px;
+      a {
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
   }
 }

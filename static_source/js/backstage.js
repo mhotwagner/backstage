@@ -63,15 +63,18 @@ function centerImages() {
         if ($(this).height() > $(this).width()) {
             $(this).addClass('taller');
         } else {
-            console.log(this, ' is taller')
             $(this).addClass('fatter');
         }
     });
 }
 
 $(document).ready(function() {
-    centerImages()
+    centerImages();
     sizeImages();
+
+    $('.menu-button').on('click', function() {
+        $('.menu').toggleClass('active');
+    })
 
     $('.fancybox-button').fancybox();
 });
@@ -80,3 +83,8 @@ $(window).resize(function() {
     centerImages()
     sizeImages();
 });
+
+
+
+
+

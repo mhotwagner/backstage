@@ -13,6 +13,7 @@ class OperaListView(View):
     def get(self, request):
 
         opere = Profile.objects.first().homepage_features.all()
+        profile = Profile.objects.first()
 
         return render(
             request=request,
@@ -20,6 +21,7 @@ class OperaListView(View):
             context={
                 'top_row': opere[:3],
                 'bottom_row': opere[3:],
+                'profile': profile,
             },
         )
 
@@ -28,6 +30,7 @@ class FotoListView(View):
     def get(self, request):
 
         foti = Profile.objects.first().photo_features.all()
+        profile = Profile.objects.first()
 
         return render(
             request=request,
@@ -35,6 +38,7 @@ class FotoListView(View):
             context={
                 'top_row': foti[:3],
                 'bottom_row': foti[3:],
+                'profile': profile,
             },
         )
 
@@ -43,6 +47,7 @@ class ScrittoListView(View):
     def get(self, request):
 
         scritti = Profile.objects.first().writing_features.all()
+        profile = Profile.objects.first()
 
         return render(
             request=request,
@@ -50,5 +55,6 @@ class ScrittoListView(View):
             context={
                 'top_row': scritti[:3],
                 'bottom_row': scritti[3:],
+                'profile': profile,
             },
         )
