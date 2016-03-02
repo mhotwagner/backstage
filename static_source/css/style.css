@@ -265,7 +265,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   font-family: gotham, "Helvetica Neue", Helvetica, Roboto, sans-serif;
   font-weight: normal; }
 
-.shaded-text-container, .row .row-item .info {
+.shaded-text-container {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
   background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
   /* FF3.6-15 */
@@ -296,7 +296,6 @@ a, a:hover, a:visited {
     position: relative;
     display: inline-block;
     width: 30%;
-    overflow: hidden;
     margin-right: 18px;
     cursor: pointer; }
     .row .row-item:nth-child(3n) {
@@ -314,22 +313,52 @@ a, a:hover, a:visited {
       .row .row-item .img.fatter {
         background-size: auto 100%; }
     .row .row-item .info {
-      display: none;
       position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 32px; }
+      width: 80%;
+      left: 10%;
+      padding-top: .5em;
+      padding-bottom: .5em;
+      vertical-align: middle;
+      border-radius: 2px;
+      background-color: #000;
+      opacity: 0;
+      transition: all 150ms ease-in;
+      text-align: center; }
       .row .row-item .info h6 {
-        padding-left: 8px;
         color: #ffffff;
-        font-size: 1em;
+        font-size: .8em;
+        line-height: 1em;
         font-weight: 200; }
+      .row .row-item .info:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 0;
+        height: 0;
+        transform: translateX(-10px);
+        border: 10px solid transparent; }
     .row .row-item .hover-down {
       opacity: 0;
       position: absolute;
       top: 0; }
     .row .row-item:hover .hover-down {
       opacity: 1; }
+  .row.top-row .row-item .info {
+    bottom: 115%; }
+    .row.top-row .row-item .info:after {
+      top: 100%;
+      border-top-color: #000; }
+  .row.top-row .row-item:hover .info {
+    bottom: 108%;
+    opacity: 1; }
+  .row.bottom-row .row-item .info {
+    top: 115%; }
+    .row.bottom-row .row-item .info:after {
+      border-bottom-color: #000;
+      bottom: 100%; }
+  .row.bottom-row .row-item:hover .info {
+    top: 108%;
+    opacity: 1; }
 
 @media screen and (max-width: 1280px) {
   .row {
