@@ -489,6 +489,8 @@ a, a:hover, a:visited {
     width: 75%;
     margin-left: 12.5%;
     margin-top: 2em; }
+    .row .row-item .info {
+      display: none !important; }
 
   footer.footer {
     bottom: 0;
