@@ -181,6 +181,7 @@ a, a:hover, a:visited {
       height: 100%;
       margin-top: 9px;
       text-align: right;
+      pointer-events: none;
       .menu-button {
         display: block;
         position: relative;
@@ -188,6 +189,7 @@ a, a:hover, a:visited {
         z-index: 100;
         width: 85%;
         font-size: 2em;
+        pointer-events: all;
       }
       ul {
         position: absolute;
@@ -202,6 +204,7 @@ a, a:hover, a:visited {
         box-shadow: -1px 0px rgba(0, 0, 0, 0.25);
         transition: all 150ms ease-in-out;
         display: inline-block;
+        pointer-events: all;
         li {
           line-height: 2em;
         }
