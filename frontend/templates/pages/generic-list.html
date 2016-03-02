@@ -3,13 +3,13 @@
 {% load static from staticfiles %}
 
 {% block page_title %}
-Home | Meghan R Duffy | Do Real Shit
+{{ title }} | Meghan R. Duffy
 {% endblock page_title %}
 
 {% block body_content %}
 
     <div class="inner-content valign-large valign-xlarge">
-        <ul class="row">
+        <ul class="row top-row">
             {% for item in top_row %}
                 {% if item.is_foto %}
                     <a
@@ -45,7 +45,7 @@ Home | Meghan R Duffy | Do Real Shit
                 {% endif %}
             {% endfor %}
         </ul>
-        <ul class="row">
+        <ul class="row bottom-row">
             {% for item in bottom_row %}
                 {% if item.is_foto %}
                     <a

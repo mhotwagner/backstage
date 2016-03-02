@@ -4,9 +4,6 @@ from django.shortcuts import render
 from django.views.generic import View
 
 from facade.models import Profile
-from foti.models import Foto
-from opere.models import Opera
-from scritti.models import Scritto
 
 
 class OperaListView(View):
@@ -22,6 +19,7 @@ class OperaListView(View):
                 'top_row': opere[:3],
                 'bottom_row': opere[3:],
                 'profile': profile,
+                'title': 'Home',
             },
         )
 
@@ -34,11 +32,12 @@ class FotoListView(View):
 
         return render(
             request=request,
-            template_name='pages/foto-list.html',
+            template_name='pages/generic-list.html',
             context={
                 'top_row': foti[:3],
                 'bottom_row': foti[3:],
                 'profile': profile,
+                'title': 'Photos',
             },
         )
 
@@ -51,10 +50,11 @@ class ScrittoListView(View):
 
         return render(
             request=request,
-            template_name='pages/scritto-list.html',
+            template_name='pages/generic-list.html',
             context={
                 'top_row': scritti[:3],
                 'bottom_row': scritti[3:],
                 'profile': profile,
+                'title': 'Writing'
             },
         )
