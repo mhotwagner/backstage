@@ -15,7 +15,8 @@ a, a:hover, a:visited {
 
 
 .content {
-  height: 100%;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 .row {
   @include shift(1.5);
@@ -120,16 +121,12 @@ a, a:hover, a:visited {
   }
 }
 
-@include media(max-width 1280px) {
-  .row {
-    @include shift(2.5);
-    @include span-columns(7);
-    text-align: center;
-    .row-item {
-      width: 29%
-    }
+@include media(max-width 960px) {
+  body, html {
+    height: auto;
   }
   header.header {
+    position: relative;
     padding-top: 0.5em;
     height: 50px;
     .logo {
@@ -145,25 +142,6 @@ a, a:hover, a:visited {
         font-size: 1.25em;
       }
     }
-  }
-  footer.footer {
-    .tagline {
-      @include shift(.5);
-      @include span-columns(7);
-    }
-    .social-links {
-      @include span-columns(4);
-      @include omega();
-    }
-  }
-}
-
-@include media(max-width 860px) {
-  body, html {
-    height: auto;
-  }
-  header.header {
-    position: relative;
     .menu {
       position: fixed;
       left: 50%;
@@ -210,8 +188,6 @@ a, a:hover, a:visited {
   }
   .content {
     height: auto;
-    margin-top: 1em;
-    margin-bottom: 4em;
   }
   .row {
     @include shift(1);
@@ -225,8 +201,10 @@ a, a:hover, a:visited {
     height: auto;
   }
 }
+
 @include media(max-width 640px, 4) {
   header.header {
+    margin-top: 0;
     position: fixed;
     top: 0px;
     height: 62px;
@@ -254,9 +232,7 @@ a, a:hover, a:visited {
       }
     }
   }
-  .content {
-    margin-top: 2.5em;
-  }
+
   .row {
     .row-item {
       width: 75%;
@@ -268,33 +244,11 @@ a, a:hover, a:visited {
     }
   }
   footer.footer {
+    margin-top: 0 !important;
     bottom: 0;
-    padding: 8px 0;
+    padding-top: 8px;
     background: #fff;
     box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.5);
-    .tagline {
-      @include shift(.25 of 4);
-      @include span-columns(1.75 of 4);
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-      float: none;
-      h4 {
-        text-align: center;
-        .break {
-          display: initial;
-        }
-      }
-    }
-    .social-links {
-      @include span-columns(1.75 of 4);
-      @include omega();
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-      text-align: center;
-      margin-top: 10px;
-    }
   }
 }
 
@@ -320,23 +274,6 @@ a, a:hover, a:visited {
         margin-top: -8px;
         width: 70%;
         transform: scale(1.5, 1);
-      }
-    }
-  }
-  footer.footer {
-    .tagline {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-      float: none;
-      font-size: 1em;
-    }
-    .social-links {
-      a {
-        img {
-          width: 24px;
-          height: 24px;
-        }
       }
     }
   }
