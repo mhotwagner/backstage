@@ -14,3 +14,17 @@
 .z-bottom {
   z-index: 0;
 }
+
+
+
+.no-mobile {
+  @include media(max-width 640px) {
+    display: none !important;
+  }
+}
+.mobile-only {
+  display: none;
+  @include media(max-width 640px) {
+    display: initial;
+  }
+}
