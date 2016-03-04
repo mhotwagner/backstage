@@ -319,11 +319,11 @@ a, a:hover, a:visited {
         border-width: 10px 12px;
         border-top-color: #820263; }
     .row .row-item .hover-down {
-      opacity: 0;
+      opacity: 0.5;
       position: absolute;
       top: 0; }
     .row .row-item:hover .hover-down {
-      opacity: 0.5; }
+      opacity: 0; }
   .row .row-item .info {
     bottom: 115%; }
     .row .row-item .info:after {

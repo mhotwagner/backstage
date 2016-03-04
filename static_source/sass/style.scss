@@ -78,13 +78,13 @@ a, a:hover, a:visited {
 
     }
     .hover-down {
-      opacity: 0;
+      opacity: 0.5;
       position: absolute;
       top: 0;
     }
     &:hover {
       .hover-down {
-        opacity: 0.5;
+        opacity: 0;
       }
     }
   }
