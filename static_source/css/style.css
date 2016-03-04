@@ -309,6 +309,7 @@ a, a:hover, a:visited {
         font-weight: 300; }
       .row .row-item .info:after {
         content: '';
+        pointer-events: none;
         position: absolute;
         left: 50%;
         width: 0;
@@ -318,10 +319,14 @@ a, a:hover, a:visited {
         border-color: transparent;
         border-width: 10px 12px;
         border-top-color: #820263; }
+    .row .row-item .hover-up {
+      opacity: 0.75; }
     .row .row-item .hover-down {
       opacity: 0.5;
       position: absolute;
       top: 0; }
+    .row .row-item:hover .hover-up {
+      opacity: 1; }
     .row .row-item:hover .hover-down {
       opacity: 0; }
   .row .row-item .info {

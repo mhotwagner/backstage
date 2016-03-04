@@ -63,6 +63,7 @@ a, a:hover, a:visited {
       }
       &:after {
         content:'';
+        pointer-events: none;
         position: absolute;
         left: 50%;
         width: 0;
@@ -75,7 +76,7 @@ a, a:hover, a:visited {
       }
     }
     .hover-up {
-
+      opacity: 0.75;
     }
     .hover-down {
       opacity: 0.5;
@@ -83,6 +84,9 @@ a, a:hover, a:visited {
       top: 0;
     }
     &:hover {
+      .hover-up {
+        opacity: 1;
+      }
       .hover-down {
         opacity: 0;
       }
