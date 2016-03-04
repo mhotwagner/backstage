@@ -323,7 +323,7 @@ a, a:hover, a:visited {
       position: absolute;
       top: 0; }
     .row .row-item:hover .hover-down {
-      opacity: 0.75; }
+      opacity: 0.5; }
   .row .row-item .info {
     bottom: 115%; }
     .row .row-item .info:after {
