@@ -78,10 +78,9 @@ a, a:hover, a:visited {
       position: absolute;
       top:0
     }
-
     &:hover {
       .hover-down {
-        opacity: 1;
+        opacity: 0.75;
       }
     }
   }
