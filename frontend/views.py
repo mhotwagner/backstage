@@ -16,8 +16,7 @@ class OperaListView(View):
             request=request,
             template_name='pages/generic-list.html',
             context={
-                'top_row': opere[:3],
-                'bottom_row': opere[3:],
+                'items': opere,
                 'profile': profile,
                 'title': 'Home',
             },
@@ -34,8 +33,7 @@ class FotoListView(View):
             request=request,
             template_name='pages/generic-list.html',
             context={
-                'top_row': foti[:3],
-                'bottom_row': foti[3:],
+                'items': foti,
                 'profile': profile,
                 'title': 'Photos',
             },
@@ -52,8 +50,7 @@ class ScrittoListView(View):
             request=request,
             template_name='pages/generic-list.html',
             context={
-                'top_row': scritti[:3],
-                'bottom_row': scritti[3:],
+                'items': scritti,
                 'profile': profile,
                 'title': 'Writing'
             },

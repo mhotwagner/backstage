@@ -9,44 +9,8 @@
 {% block body_content %}
 
     <div class="inner-content">
-        <ul class="row top-row">
-            {% for item in top_row %}
-                {% if item.is_foto %}
-                    <a
-                            class="fancybox-button"
-                            rel="fancybox-button"
-                            href="{{ item.image_color.url }}"
-                            title="{{ item.name }}"
-                    >
-                        <li class="row-item content-item">
-                            <div class="img sized-image centered-image hover-up" style="background-image: url({{ item.image_color.url }});"></div>
-                            <div class="img sized-image centered-image hover-down" style="background-image: url({{ item.image_grayscale.url }});"></div>
-                            <div class="info">
-                                <h6 class="">{{ item.name }}</h6>
-                            </div>
-                            <em class="clear-it"></em>
-                        </li>
-                    </a>
-                {% elif item.is_scritto %}
-                    <a
-                            class=""
-                            href="{{ item.link }}"
-                            target="_blank"
-                    >
-                        <li class="row-item content-item">
-                            <div class="img sized-image centered-image hover-up" style="background-image: url({{ item.image_color.url }});"></div>
-                            <div class="img sized-image centered-image hover-down" style="background-image: url({{ item.image_grayscale.url }});"></div>
-                            <div class="info">
-                                <h6 class="">{{ item.name }}</h6>
-                            </div>
-                            <em class="clear-it"></em>
-                        </li>
-                    </a>
-                {% endif %}
-            {% endfor %}
-        </ul>
-        <ul class="row bottom-row">
-            {% for item in bottom_row %}
+        <ul class="row">
+            {% for item in items %}
                 {% if item.is_foto %}
                     <a
                             class="fancybox-button"
