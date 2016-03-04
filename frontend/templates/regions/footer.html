@@ -6,32 +6,32 @@
     </div>
     <div class="social-links">
         {% if profile.linkedin %}
-            <a href="https://www.linkedin.com/in/meghanrduffy" target="_blank">
+            <a href="{{ profile.linkedin }}ttps://www.linkedin.com/in/meghanrduffy" target="_blank">
                 <img src="{% static 'art/linkedin.png' %}" />
             </a>
         {% endif %}
         {% if profile.facebook %}
-            <a href="https://www.facebook.com/nomadpenguin" target="_blank">
+            <a href="{{ profile.facebook }}ttps://www.facebook.com/nomadpenguin" target="_blank">
                 <img src="{% static 'art/facebook.png' %}" />
             </a>
         {% endif %}
         {% if profile.twitter %}
-            <a href="https://twitter.com/ladycollective" target="_blank">
+            <a href="{{ profile.twitter }}ttps://twitter.com/ladycollective" target="_blank">
                 <img src="{% static 'art/twitter.png' %}" />
             </a>
         {% endif %}
         {% if profile.google %}
-            <a href="mailto:megrduffy16@gmail.com" target="_blank">
+            <a href="{{ profile.google }}ailto:megrduffy16@gmail.com" target="_blank">
                 <img src="{% static 'art/google.png' %}" />
             </a>
         {% endif %}
         {% if profile.pinterest %}
-            <a href="https://www.pinterest.com/ladycollective/" target="_blank">
+            <a href="{{ profile.pinterest }}ttps://www.pinterest.com/ladycollective/" target="_blank">
                 <img src="{% static 'art/pinterest.png' %}" />
             </a>
         {% endif %}
         {% if profile.instagram %}
-            <a href="#" target="_blank">
+            <a href="{{ profile.instagram }}" target="_blank">
                 <img src="{% static 'art/instagram.png' %}" />
             </a>
         {% endif %}
