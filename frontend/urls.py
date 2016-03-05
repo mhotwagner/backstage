@@ -6,12 +6,13 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns, static
 from .views import (
     OperaListView,
     FotoListView,
-    ScrittoListView
-)
+    ScrittoListView,
+    ProfileView)
 
 
 urlpatterns = [
     url(r'^$', OperaListView.as_view(), name='home'),
+    url(r'^about/$', ProfileView.as_view(), name='about'),
     url(r'^photos/$', FotoListView.as_view(), name='photos'),
     url(r'^writing/$', ScrittoListView.as_view(), name='writing'),
 ]

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load static from staticfiles %}
+
+{% block page_title %}
+About | Meghan R. Duffy
+{% endblock page_title %}
+
+{% block body_content %}
+
+    <div class="inner-content about">
+        <div class="left-col photo-col">
+            <img class="profile-img valign-large valign-xlarge" src="{{ profile.bio_image.url }}" />
+        </div>
+        <div class="right-col text-col">
+            <div class="text-container valign-large valign-xlarge">{{ profile.intro|safe }}</div>
+        </div>
+        <em class="clear-it"></em>
+    </div>
+
+{% endblock body_content %}

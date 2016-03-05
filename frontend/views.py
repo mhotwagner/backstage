@@ -55,3 +55,15 @@ class ScrittoListView(View):
                 'title': 'Writing'
             },
         )
+
+class ProfileView(View):
+    def get(self, request):
+        profile = Profile.objects.first()
+
+        return render(
+            request=request,
+            template_name='pages/about.html',
+            context={
+                'profile': profile,
+            },
+        )

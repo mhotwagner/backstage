@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django_assets',
     'imagekit',
     'solo',
+    'ckeditor',
 
     'api',
     'facade',
@@ -138,3 +139,6 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
+
+CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
+CKEDITOR_UPLOAD_PATH = "uploads/"

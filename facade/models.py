@@ -1,5 +1,7 @@
 from django.db import models
 
+from ckeditor.fields import RichTextField
+
 from solo.models import SingletonModel
 from phonenumber_field import modelfields as phonenumber_models
 
@@ -24,12 +26,13 @@ class Profile(SingletonModel):
         blank=True,
         help_text='Just a quick description (e.g. "Waddling through the world in search of adventure and snuggles" to go with "Nomad Penguin"',
     )
-    intro = models.TextField(
+    intro = RichTextField(
         max_length=1024,
         blank=True,
     )
     bio_title = models.CharField(max_length=64, blank=True)
-    bio = models.TextField(
+    bio_image = models.ImageField(upload_to='profile', blank=True)
+    bio = RichTextField(
         max_length=4096,
         blank=True,
     )
