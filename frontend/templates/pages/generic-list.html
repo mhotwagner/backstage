@@ -13,14 +13,25 @@
             {% for item in items %}
                 {% if item.is_foto %}
                     <a
-                            class="fancybox-button"
-                            rel="fancybox-button"
-                            href="{{ item.image_color.url }}"
-                            title="{{ item.name }}"
+                        class="fancybox-button"
+                        rel="fancybox-button"
+                        href="{{ item.image_color.url }}"
+                        title="{{ item.name }}"
                     >
-                        <li class="row-item content-item">
-                            <div class="img sized-image centered-image hover-up" style="background-image: url({{ item.image_color.url }});"></div>
-                            <div class="img sized-image centered-image hover-down" style="background-image: url({{ item.image_grayscale.url }});"></div>
+                        <li class="row-item content-itemcentered-image-container gone delayed">
+                            <img class="sizer" src="{{ item.image_color.url }}"/>
+                            <div
+                                class="img sized-image centered-image hover-up"
+                                style="background-image: url({{ item.image_color.url }});"
+                                alt="{{ item.name}}"
+                            >
+
+                            </div>
+                            <div
+                                class="img sized-image centered-image hover-down"
+                                style="background-image: url({{ item.image_grayscale.url }});"
+                                alt="{{ item.name}}"
+                            ></div>
                             <div class="info">
                                 <h6 class="">{{ item.name }}</h6>
                             </div>
@@ -29,13 +40,24 @@
                     </a>
                 {% elif item.is_scritto %}
                     <a
-                            class=""
-                            href="{{ item.link }}"
-                            target="_blank"
+                        class=""
+                        href="{{ item.link }}"
+                        target="_blank"
                     >
-                        <li class="row-item content-item">
-                            <div class="img sized-image centered-image hover-up" style="background-image: url({{ item.image_color.url }});"></div>
-                            <div class="img sized-image centered-image hover-down" style="background-image: url({{ item.image_grayscale.url }});"></div>
+                        <li class="row-item content-item centered-image-container gone delayed">
+                            <img class="sizer" src="{{ item.image_color.url }}"/>
+                            <div
+                                class="img sized-image centered-image hover-up"
+                                style="background-image: url({{ item.image_color.url }});"
+                                alt="{{ item.name}}"
+                            >
+
+                            </div>
+                            <div
+                                class="img sized-image centered-image hover-down"
+                                style="background-image: url({{ item.image_grayscale.url }});"
+                                alt="{{ item.name}}"
+                            ></div>
                             <div class="info">
                                 <h6 class="">{{ item.name }}</h6>
                             </div>
