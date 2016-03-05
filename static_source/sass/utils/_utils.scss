@@ -19,7 +19,7 @@
   }
 }
 .valign-large {
-  @include media(min-width 861px max-width 1280px) {
+  @include media(min-width 961px max-width 1280px) {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -27,7 +27,7 @@
 }
 
 .valign-middle {
-  @include media(min-width 640px max-width 860px) {
+  @include media(min-width 640px max-width 960px) {
     position: relative;
     top: 50%;
     transform: translateY(-50%);

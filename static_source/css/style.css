@@ -76,13 +76,13 @@ table {
     top: 50%;
     transform: translateY(-50%); } }
 
-@media screen and (min-width: 861px) and (max-width: 1280px) {
+@media screen and (min-width: 961px) and (max-width: 1280px) {
   .valign-large {
     position: relative;
     top: 50%;
     transform: translateY(-50%); } }
 
-@media screen and (min-width: 640px) and (max-width: 860px) {
+@media screen and (min-width: 640px) and (max-width: 960px) {
   .valign-middle {
     position: relative;
     top: 50%;
@@ -280,16 +280,17 @@ a, a:hover, a:visited {
   .about .right-col:last-child {
     margin-right: 0; }
 .about .photo-col .profile-img {
-  max-width: 100%;
+  max-width: 500px;
+  width: 100%;
   max-height: 100%;
-  text-align: right; }
+  text-align: center; }
 .about .text-col .text-container {
   font-weight: 200;
   font-size: 1.5em; }
   .about .text-col .text-container p {
     font-weight: inherit; }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 960px) {
   .about {
     margin-top: 6em; }
     .about .photo-col, .about .text-col {
@@ -299,7 +300,8 @@ a, a:hover, a:visited {
       margin-right: 3.57866%;
       width: 74.10533%;
       height: auto;
-      margin-bottom: 2em; }
+      margin-bottom: 2em;
+      text-align: center; }
       .about .photo-col:last-child, .about .text-col:last-child {
         margin-right: 0; } }
 .row {
