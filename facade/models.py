@@ -76,6 +76,7 @@ class Profile(SingletonModel):
     instagram = models.URLField(blank=True)
     linkedin = models.URLField(blank=True)
     pinterest = models.URLField(blank=True)
+    tumblr = models.URLField(blank=True)
 
     # Someday we'll change the first one to accept Opera
     homepage_features = models.ManyToManyField(Scritto, related_name='facade_homepage_features', help_text='Max of 6!', blank=True)
