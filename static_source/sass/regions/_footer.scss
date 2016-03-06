@@ -12,12 +12,33 @@ footer.footer {
     }
   }
   .social-links {
-    a {
-      margin-right: 6px;
-      text-decoration: none;
-      img {
-        width: 24px;
-        height: 24px;
+    .footer-item {
+      display: inline-block;
+      position: relative;
+      margin: 0 0.5em;
+      a {
+        text-decoration: none;
+        img {
+          width: 24px;
+          height: 24px;
+          transition: opacity 150ms ease-in;
+        }
+        img.up {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
+      }
+      &:hover {
+        a {
+          img.down {
+            opacity: 0;
+          }
+          img.up {
+            opacity: 1;
+          }
+        }
       }
     }
   }

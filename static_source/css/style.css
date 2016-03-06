@@ -208,12 +208,25 @@ footer.footer {
   footer.footer .tagline h4 {
     font-size: 1.125em;
     font-weight: 200; }
-  footer.footer .social-links a {
-    margin-right: 6px;
-    text-decoration: none; }
-    footer.footer .social-links a img {
-      width: 24px;
-      height: 24px; }
+  footer.footer .social-links .footer-item {
+    display: inline-block;
+    position: relative;
+    margin: 0 0.5em; }
+    footer.footer .social-links .footer-item a {
+      text-decoration: none; }
+      footer.footer .social-links .footer-item a img {
+        width: 24px;
+        height: 24px;
+        transition: opacity 150ms ease-in; }
+      footer.footer .social-links .footer-item a img.up {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0; }
+    footer.footer .social-links .footer-item:hover a img.down {
+      opacity: 0; }
+    footer.footer .social-links .footer-item:hover a img.up {
+      opacity: 1; }
 
 @font-face {
   font-family: gotham;

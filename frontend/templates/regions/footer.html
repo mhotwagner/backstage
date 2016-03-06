@@ -5,35 +5,63 @@
         </h4>
     </div>
     <div class="social-links">
-        {% if profile.linkedin %}
-            <a href="{{ profile.linkedin }}ttps://www.linkedin.com/in/meghanrduffy" target="_blank">
-                <img src="{% static 'art/linkedin.png' %}" />
-            </a>
-        {% endif %}
-        {% if profile.facebook %}
-            <a href="{{ profile.facebook }}ttps://www.facebook.com/nomadpenguin" target="_blank">
-                <img src="{% static 'art/facebook.png' %}" />
-            </a>
-        {% endif %}
-        {% if profile.twitter %}
-            <a href="{{ profile.twitter }}ttps://twitter.com/ladycollective" target="_blank">
-                <img src="{% static 'art/twitter.png' %}" />
-            </a>
-        {% endif %}
-        {% if profile.google %}
-            <a href="{{ profile.google }}ailto:megrduffy16@gmail.com" target="_blank">
-                <img src="{% static 'art/google.png' %}" />
-            </a>
-        {% endif %}
-        {% if profile.pinterest %}
-            <a href="{{ profile.pinterest }}ttps://www.pinterest.com/ladycollective/" target="_blank">
-                <img src="{% static 'art/pinterest.png' %}" />
-            </a>
-        {% endif %}
-        {% if profile.instagram %}
-            <a href="{{ profile.instagram }}" target="_blank">
-                <img src="{% static 'art/instagram.png' %}" />
-            </a>
-        {% endif %}
+        <ul>
+            {% if profile.linkedin %}
+                <li class="footer-item">
+                        <a href="{{ profile.linkedin }}ttps://www.linkedin.com/in/meghanrduffy" target="_blank">
+                            <img class="down" src="{% static 'art/linkedin.png' %}" />
+                            <img class="up" src="{% static 'art/linkedin-up.png' %}" />
+                    </a>
+                    </li>
+            {% endif %}
+            {% if profile.facebook %}
+                <li class="footer-item">
+                    <a href="{{ profile.facebook }}ttps://www.facebook.com/nomadpenguin" target="_blank">
+                        <img class="down" src="{% static 'art/facebook.png' %}" />
+                        <img class="up" src="{% static 'art/facebook-up.png' %}" />
+                        </a>
+                </a>
+            {% endif %}
+            {% if profile.twitter %}
+                <li class="footer-item">
+                    <a href="{{ profile.twitter }}ttps://twitter.com/ladycollective" target="_blank">
+                        <img class="down" src="{% static 'art/twitter.png' %}" />
+                        <img class="up" src="{% static 'art/twitter-up.png' %}" />
+                    </a>
+                </li>
+            {% endif %}
+            {% if profile.google %}
+                <li class="footer-item">
+                    <a href="{{ profile.google }}ailto:megrduffy16@gmail.com" target="_blank">
+                        <img class="down" src="{% static 'art/google.png' %}" />
+                        <img class="up" src="{% static 'art/google-up.png' %}" />
+                    </a>
+                </li>
+            {% endif %}
+            {% if profile.pinterest %}
+                <li class="footer-item">
+                    <a href="{{ profile.pinterest }}ttps://www.pinterest.com/ladycollective/" target="_blank">
+                        <img class="down" src="{% static 'art/pinterest.png' %}" />
+                        <img class="up" src="{% static 'art/pinterest-up.png' %}" />
+                    </a>
+                </li>
+            {% endif %}
+            {% if profile.instagram %}
+                <li class="footer-item">
+                    <a href="{{ profile.instagram }}" target="_blank">
+                        <img class="down" src="{% static 'art/instagram.png' %}" />
+                        <img class="up" src="{% static 'art/instagram-up.png' %}" />
+                    </a>
+                </li>
+            {% endif %}
+            {% if profile.tumblr %}
+                <li class="footer-item">
+                    <a href="{{ profile.tumblr }}" target="_blank">
+                        <img class="down" src="{% static 'art/tumblr.png' %}" />
+                        <img class="up" src="{% static 'art/tumblr-up.png' %}" />
+                    </a>
+                </li>
+            {% endif %}
+        </ul>
     </div>
     <em class="clear-it"></em>
