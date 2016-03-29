@@ -450,6 +450,9 @@ a, a:hover, a:visited {
       margin-right: 0; }
     .row .row-item {
       width: 28%; }
+      .row .row-item .info h6 {
+        font-size: 1.125em;
+        line-height: 1.25em; }
 
   footer.footer {
     position: relative;

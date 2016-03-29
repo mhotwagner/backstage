@@ -223,6 +223,12 @@ a, a:hover, a:visited {
     @include span-columns(10);
     .row-item {
       width: 28%;
+      .info {
+        h6 {
+          font-size: 1.125em;
+          line-height: 1.25em;
+        }
+      }
     }
   }
   footer.footer {
