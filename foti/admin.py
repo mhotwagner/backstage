@@ -7,6 +7,6 @@ from .models import Foto
 
 
 class FotoAdmin(SortableAdminMixin, ModelAdmin):
-    exclude = ['is_foto', 'is_scritto']
+    exclude = ['is_foto', 'is_scritto', 'opera_index',]
 
 admin.site.register(Foto, FotoAdmin)
