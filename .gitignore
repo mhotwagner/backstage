@@ -2,6 +2,9 @@
 *.pyc
 static/
 
+# Database object images
+media/
+
 # Mac shit
 .DS_STORE
 .DS_STORE?
