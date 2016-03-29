@@ -18,22 +18,17 @@
                         href="{{ item.image_color.url }}"
                         title="{{ item.name }}"
                     >
-                        <li class="row-item content-itemcentered-image-container gone delayed">
+                        <li class="row-item content-item centered-image-container foto gone delayed">
                             <img class="sizer" src="{{ item.image_color.url }}"/>
                             <div
-                                class="img sized-image centered-image hover-up"
+                                class="img sized-image centered-image"
                                 style="background-image: url({{ item.image_color.url }});"
                                 alt="{{ item.name}}"
                             >
 
                             </div>
-                            <div
-                                class="img sized-image centered-image hover-down"
-                                style="background-image: url({{ item.image_grayscale.url }});"
-                                alt="{{ item.name}}"
-                            ></div>
                             <div class="info">
-                                <h6 class="">{{ item.name }}</h6>
+                                <h6 class="valign"><i class="icon icon-camera"></i><br/>{{ item.name }}</h6>
                             </div>
                             <em class="clear-it"></em>
                         </li>
@@ -44,22 +39,17 @@
                         href="{{ item.link }}"
                         target="_blank"
                     >
-                        <li class="row-item content-item centered-image-container gone delayed">
+                        <li class="row-item content-item centered-image-container scritto gone delayed">
                             <img class="sizer" src="{{ item.image_color.url }}"/>
                             <div
-                                class="img sized-image centered-image hover-up"
+                                class="img sized-image centered-image"
                                 style="background-image: url({{ item.image_color.url }});"
                                 alt="{{ item.name}}"
                             >
 
                             </div>
-                            <div
-                                class="img sized-image centered-image hover-down"
-                                style="background-image: url({{ item.image_grayscale.url }});"
-                                alt="{{ item.name}}"
-                            ></div>
                             <div class="info">
-                                <h6 class="">{{ item.name }}</h6>
+                                <h6 class="valign"><i class="icon icon-note"></i><br/>{{ item.name }}</h6>
                             </div>
                             <em class="clear-it"></em>
                         </li>
